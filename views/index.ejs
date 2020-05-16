@@ -1,0 +1,13 @@
+<script type="text/javascript">
+// Create data as a global variable for using
+  window.initialData = <%- JSON.stringify(initialData) -%>;
+  console.log(`Output window global variable" ${initialData}`)
+</script>
+
+<%- include('header')%>
+  <!-- <p>This is ejs file, with html plus javascript</p> -->
+  <!-- <div><%=Math.random()%></div> -->
+  <div id="root"><%-initialMarkup -%></div>
+<%- include('footer')%>
+
+

@@ -1,0 +1,46 @@
+{
+  "name": "fulljs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node server.js",
+    "test": "jest",
+    "local-server": "nodemon --exec babel-node server.js --ignore dist/ --config ./nodemon.json",
+    "local-bundle": "webpack -wd"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/node": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "D": "^1.0.0",
+    "axios": "^0.19.0",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "json-loader": "^0.5.7",
+    "mongodb": "^3.3.5",
+    "node-sass-middleware": "^0.11.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-test-renderer": "^16.12.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "nodemon": "^2.0.1"
+  }
+}
